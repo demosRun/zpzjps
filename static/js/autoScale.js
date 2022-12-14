@@ -219,6 +219,16 @@ function getScale () {
         box.style.width = autoScaleInfo.deviseW + 'px'
       }
     }
+    // 不缩放 屏幕小于设计宽度居中显示
+    case 'showCenter': {
+      for (var index = 0; index < boxList.length; index++) {
+        var box = boxList[index]
+        box.parentNode.style.overflow = 'auto'
+        box.style.width = autoScaleInfo.deviseW + 'px'
+        box.style.transform = 'scale(1, 1) translate(' + (window.innerWidth - autoScaleInfo.deviseW) / 2 + 'px, 0)';
+        document.body.style.overflowX = 'hidden'
+      }
+    }
   }
   // 执行回调
   if (autoScaleInfo.callBack) {

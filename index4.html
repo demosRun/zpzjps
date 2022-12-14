@@ -57,9 +57,9 @@
       width: 1200px;
       margin: 0 auto;
       border-radius: 5px;
-      padding: 20px;
+      padding: 60px 20px;
       background-color: #eff6fe;
-      
+      position: relative;
     }
     .title-box img {
       display: block;
@@ -77,13 +77,13 @@
     .item h3 {
       color: #5b6fb0;
       font-size: 24px;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
       margin-left: 45px;
     }
     .item p {
       margin-left: 45px;
       line-height: 26px;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
       font-size: 16px;
     }
     .item textarea {
@@ -93,7 +93,7 @@
       background-color: white;
       border: none;
       height: 100px;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
     .title-box {
       margin: 30px 0;
@@ -101,13 +101,24 @@
     .img-box .img-item {
       float: left;
       width: 200px;
-      height: 200px;
-      margin: 10px;
+      padding: 15px;
+      background-color: white;
+      margin-right: 10px;
+    }
+    .img-box .img-item span {
+      background-color: #aaaaaa;
+      display: block;
+      width: 90px;
+      line-height: 30px;
+      text-align: center;
+      color: white;
+      margin: 0 auto;
+      margin-top: 10px;
     }
     .img-box {
       margin-left: 45px;
-      background-color: white;
-      margin-bottom: 10px;
+      
+      margin-bottom: 20px;
     }
     .link {
       margin-left: 45px;
@@ -116,7 +127,7 @@
       line-height: 45px;
       text-align: center;
       color: white;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
     .link a {
       color: white;
@@ -128,6 +139,36 @@
       display: block;
       margin: 0 auto;
     }
+    .card-title {
+      background-image: url('./static/images/title-bar.png');
+      width: 219px;
+      height: 93px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      top: -52px;
+      text-align: center;
+      line-height: 90px;
+      font-size: 34px;
+      font-weight: bold;
+      color: white;
+    }
+    .check-box {
+      font-size: 20px;
+      margin: 10px 0;
+      margin-left: 45px;
+    }
+    .check-box .checkbox-item {
+      width: 140px;
+      display: inline-block;
+      margin-bottom: 5px;
+    }
+    .check-box .checkbox-item input {
+      width: 18px;
+      height: 18px;
+      margin-right: 5px;
+    }
   </style>
 </head>
 
@@ -136,6 +177,8 @@
     <img class="so-0" src="./static/images/top.jpg">
     <div class="so so-1">内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号</div>
     <div class="lb-box">
+      <!-- 标题文字 -->
+      <div class="card-title">意向类</div>
       <div class="title-box">
         <img src="./static/images/title-1.png">
       </div>
@@ -227,12 +270,40 @@
         <h2>研发部 杜波</h2>
         <h3>人民网LOGO冻干咖啡</h3>
         <div class="img-box clear">
-          <div class="img-item">
+          <div class="img-item select-item">
             <img src="./static/images/200.png">
+            <span>选择</span>
           </div>
-          <div class="img-item">
+          <div class="img-item select-item">
             <img src="./static/images/200.png">
+            <span>选择</span>
           </div>
+        </div>
+        <div class="check-box">
+          <span class="checkbox-item">
+            <input type="checkbox"> 选项
+          </span>
+          <span class="checkbox-item">
+            <input type="checkbox"> 选项
+          </span>
+          <span class="checkbox-item">
+            <input type="checkbox"> 选项
+          </span>
+          <span class="checkbox-item">
+            <input type="checkbox"> 选项
+          </span>
+          <span class="checkbox-item">
+            <input type="checkbox"> 选项
+          </span>
+          <span class="checkbox-item">
+            <input type="checkbox"> 选项
+          </span>
+          <span class="checkbox-item">
+            <input type="checkbox"> 选项
+          </span>
+          <span class="checkbox-item">
+            <input type="checkbox"> 选项
+          </span>
         </div>
         <p>内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号</p>
         <div class="link"><a href="#">点击查看完整方案</a></div>
@@ -280,10 +351,9 @@
     setTimeout(() => {
       autoScale({
         deviseW: 1920,
-        deviseH: 6855,
         center: 'middle',
         scroll: false,
-        type: 'show',
+        type: 'showCenter',
         box: '.scale-box'
       })
     }, 0);
