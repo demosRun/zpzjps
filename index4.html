@@ -54,10 +54,10 @@
     }
     .lb-box {
       border: 10px solid #db692a;
-      width: 1200px;
+      width: 1150px;
       margin: 0 auto;
       border-radius: 5px;
-      padding: 60px 20px;
+      padding: 60px 30px;
       background-color: #eff6fe;
       position: relative;
     }
@@ -69,10 +69,14 @@
       color: #db692a;
       font-size: 24px;
       line-height: 45px;
-      background-image: url(./static/images/titleicon.png);
       background-repeat: no-repeat;
       padding-left: 45px;
       background-position: left center;
+      cursor: pointer;
+      background-image: url(./static/images/titleicon-2.png);
+    }
+    .item h2.active {
+      background-image: url(./static/images/titleicon.png);
     }
     .item h3 {
       color: #5b6fb0;
@@ -88,7 +92,7 @@
     }
     .item textarea {
       margin-left: 45px;
-      width: 1125px;
+      width: 1080px;
       padding: 10px;
       background-color: white;
       border: none;
@@ -114,6 +118,10 @@
       color: white;
       margin: 0 auto;
       margin-top: 10px;
+    }
+    .img-box .img-item.active span {
+      background-color: #eb5b29;
+      color: white;
     }
     .img-box {
       margin-left: 45px;
@@ -158,6 +166,7 @@
       font-size: 20px;
       margin: 10px 0;
       margin-left: 45px;
+      display: none;
     }
     .check-box .checkbox-item {
       width: 140px;
@@ -168,6 +177,34 @@
       width: 18px;
       height: 18px;
       margin-right: 5px;
+    }
+    .pingfen-bar {
+      height: 100px;
+      position: relative;
+    }
+    .pingfen-bar .pingfen {
+      display: block;
+      margin: 0 auto;
+    }
+    .pficon-bar {
+      width: 1015px;
+      margin: 0 auto;
+      position: relative;
+      height: 40px;
+    }
+    .pficon-bar .pingfen-icon {
+      position: absolute;
+      left: 0%;
+      transition: left 0.5s;
+    }
+    .button-bar-2 {
+      display: flex;
+      justify-content: space-evenly;
+      height: 80px;
+      align-items: center;
+    }
+    .check-box {
+      cursor: pointer;
     }
   </style>
 </head>
@@ -183,19 +220,19 @@
         <img src="./static/images/title-1.png">
       </div>
       <div class="item">
-        <h2>研发部 杜波</h2>
+        <h2 class="icon-1">研发部 杜波</h2>
         <h3>人民网LOGO冻干咖啡</h3>
         <p>内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号</p>
         <textarea>意见与建议（非必填项）</textarea>
       </div>
       <div class="item">
-        <h2>研发部 杜波</h2>
+        <h2 class="icon-2">研发部 杜波</h2>
         <h3>人民网LOGO冻干咖啡</h3>
         <p>内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号</p>
         <textarea>意见与建议（非必填项）</textarea>
       </div>
       <div class="item">
-        <h2>研发部 杜波</h2>
+        <h2 class="icon-1">研发部 杜波</h2>
         <h3>人民网LOGO冻干咖啡</h3>
         <p>内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号</p>
         <textarea>意见与建议（非必填项）</textarea>
@@ -204,7 +241,29 @@
         <img src="./static/images/title-2.png">
       </div>
       <div class="item">
-        <h2>研发部 杜波</h2>
+        <h2 class="icon-1">研发部 杜波</h2>
+        <h3>人民网LOGO冻干咖啡</h3>
+        <div class="img-box clear">
+          <div class="img-item">
+            <img src="./static/images/200.png">
+          </div>
+          <div class="img-item">
+            <img src="./static/images/200.png">
+          </div>
+        </div>
+        <p>内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号</p>
+        <div class="link"><a href="#">点击查看完整方案</a></div>
+        <div class="pingfen-bar">
+          <img class="pingfen" src="./static/images/dft.png">
+          <div class="pficon-bar">
+            <img class="pingfen-icon" src="./static/images/pingfen-icon.png">
+          </div>
+          
+        </div>
+        <textarea>意见与建议（非必填项）</textarea>
+      </div>
+      <div class="item">
+        <h2 class="icon-1">研发部 杜波</h2>
         <h3>人民网LOGO冻干咖啡</h3>
         <div class="img-box clear">
           <div class="img-item">
@@ -219,7 +278,7 @@
         <textarea>意见与建议（非必填项）</textarea>
       </div>
       <div class="item">
-        <h2>研发部 杜波</h2>
+        <h2 class="icon-1">研发部 杜波</h2>
         <h3>人民网LOGO冻干咖啡</h3>
         <div class="img-box clear">
           <div class="img-item">
@@ -231,28 +290,121 @@
         </div>
         <p>内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号</p>
         <div class="link"><a href="#">点击查看完整方案</a></div>
-        <textarea>意见与建议（非必填项）</textarea>
-      </div>
-      <div class="item">
-        <h2>研发部 杜波</h2>
-        <h3>人民网LOGO冻干咖啡</h3>
-        <div class="img-box clear">
-          <div class="img-item">
-            <img src="./static/images/200.png">
+        <div class="button-bar-2">
+          <div class="item">
+            <a href="#">
+              <img src="./static/images/xt.png">
+            </a>
           </div>
-          <div class="img-item">
-            <img src="./static/images/200.png">
+          <div class="item">
+            <a href="#">
+              <img src="./static/images/bxyactive.png">
+            </a>
           </div>
         </div>
-        <p>内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号</p>
-        <div class="link"><a href="#">点击查看完整方案</a></div>
         <textarea>意见与建议（非必填项）</textarea>
       </div>
       <div class="title-box">
         <img src="./static/images/title-3.png">
       </div>
       <div class="item">
-        <h2>研发部 杜波</h2>
+        <h2 class="icon-1">研发部 杜波</h2>
+        <h3>人民网LOGO冻干咖啡</h3>
+        <div class="img-box clear">
+          <div class="img-item">
+            <img src="./static/images/200.png">
+          </div>
+          <div class="img-item">
+            <img src="./static/images/200.png">
+          </div>
+        </div>
+        <p>内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号</p>
+        <div class="link"><a href="#">点击查看完整方案</a></div>
+        <div class="button-bar-2">
+          <div class="item">
+            <a href="#">
+              <img src="./static/images/xtactive.png">
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img src="./static/images/bxy.png">
+            </a>
+          </div>
+        </div>
+        <textarea>意见与建议（非必填项）</textarea>
+      </div>
+      <div class="item">
+        <h2 class="icon-1">研发部 杜波</h2>
+        <h3>人民网LOGO冻干咖啡</h3>
+        <div class="img-box clear">
+          <div class="img-item select-item active" group="group1" name="name1">
+            <img src="./static/images/200.png">
+            <span onclick="selectGroup('group1', 'name1')">选择</span>
+          </div>
+          <div class="img-item select-item" group="group1" name="name2">
+            <img src="./static/images/200.png">
+            <span onclick="selectGroup('group1', 'name2')">选择</span>
+          </div>
+        </div>
+        <div class="check-box" group="group1" name="name1" style="display: block;">
+          <span class="checkbox-item">
+            <input type="checkbox"> 选项
+          </span>
+          <span class="checkbox-item">
+            <input type="checkbox"> 选项
+          </span>
+          <span class="checkbox-item">
+            <input type="checkbox"> 选项
+          </span>
+          <span class="checkbox-item">
+            <input type="checkbox"> 选项
+          </span>
+          <span class="checkbox-item">
+            <input type="checkbox"> 选项
+          </span>
+          <span class="checkbox-item">
+            <input type="checkbox"> 选项
+          </span>
+          <span class="checkbox-item">
+            <input type="checkbox"> 选项
+          </span>
+          <span class="checkbox-item">
+            <input type="checkbox"> 选项
+          </span>
+        </div>
+        <div class="check-box" group="group1" name="name2">
+          <span class="checkbox-item">
+            <input type="checkbox"> 选项2
+          </span>
+          <span class="checkbox-item">
+            <input type="checkbox"> 选项2
+          </span>
+          <span class="checkbox-item">
+            <input type="checkbox"> 选项2
+          </span>
+          <span class="checkbox-item">
+            <input type="checkbox"> 选项2
+          </span>
+          <span class="checkbox-item">
+            <input type="checkbox"> 选项2
+          </span>
+          <span class="checkbox-item">
+            <input type="checkbox"> 选项2
+          </span>
+          <span class="checkbox-item">
+            <input type="checkbox"> 选项2
+          </span>
+          <span class="checkbox-item">
+            <input type="checkbox"> 选项2
+          </span>
+        </div>
+        <p>内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号</p>
+        <div class="link"><a href="#">点击查看完整方案</a></div>
+        <textarea>意见与建议（非必填项）</textarea>
+      </div>
+      <div class="item">
+        <h2 class="icon-1">研发部 杜波</h2>
         <h3>人民网LOGO冻干咖啡</h3>
         <div class="img-box clear">
           <div class="img-item">
@@ -267,65 +419,7 @@
         <textarea>意见与建议（非必填项）</textarea>
       </div>
       <div class="item">
-        <h2>研发部 杜波</h2>
-        <h3>人民网LOGO冻干咖啡</h3>
-        <div class="img-box clear">
-          <div class="img-item select-item">
-            <img src="./static/images/200.png">
-            <span>选择</span>
-          </div>
-          <div class="img-item select-item">
-            <img src="./static/images/200.png">
-            <span>选择</span>
-          </div>
-        </div>
-        <div class="check-box">
-          <span class="checkbox-item">
-            <input type="checkbox"> 选项
-          </span>
-          <span class="checkbox-item">
-            <input type="checkbox"> 选项
-          </span>
-          <span class="checkbox-item">
-            <input type="checkbox"> 选项
-          </span>
-          <span class="checkbox-item">
-            <input type="checkbox"> 选项
-          </span>
-          <span class="checkbox-item">
-            <input type="checkbox"> 选项
-          </span>
-          <span class="checkbox-item">
-            <input type="checkbox"> 选项
-          </span>
-          <span class="checkbox-item">
-            <input type="checkbox"> 选项
-          </span>
-          <span class="checkbox-item">
-            <input type="checkbox"> 选项
-          </span>
-        </div>
-        <p>内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号</p>
-        <div class="link"><a href="#">点击查看完整方案</a></div>
-        <textarea>意见与建议（非必填项）</textarea>
-      </div>
-      <div class="item">
-        <h2>研发部 杜波</h2>
-        <h3>人民网LOGO冻干咖啡</h3>
-        <div class="img-box clear">
-          <div class="img-item">
-            <img src="./static/images/200.png">
-          </div>
-          <div class="img-item">
-            <img src="./static/images/200.png">
-          </div>
-        </div>
-        <p>内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号</p>
-        <div class="link"><a href="#">点击查看完整方案</a></div>
-        <textarea>意见与建议（非必填项）</textarea>
-      </div>
-      <div class="item">
-        <h2>研发部 杜波</h2>
+        <h2 class="icon-1">研发部 杜波</h2>
         <h3>人民网LOGO冻干咖啡</h3>
         <div class="img-box clear">
           <div class="img-item">
@@ -357,6 +451,52 @@
         box: '.scale-box'
       })
     }, 0);
+    // 标题点选
+    document.querySelectorAll('.item h2').forEach(element => {
+      
+      element.onclick = function (e) {
+        if (e.target.classList.contains('active')) {
+          e.target.classList.remove('active')
+        } else {
+          e.target.classList.add('active')
+        }
+      }
+    });
+    // 滑块点选
+    document.querySelectorAll('.pingfen-bar .pingfen').forEach(element => {
+      
+      element.onclick = function (e) {
+        if (e.offsetX / 1063 < 0.1) {
+          console.log(e)
+          e.target.parentElement.querySelector('.pingfen-icon').style.left = '0px'
+        } else if (e.offsetX / 1063 < 0.3) {
+          console.log(e)
+          e.target.parentElement.querySelector('.pingfen-icon').style.left = '187px'
+        } else if (e.offsetX / 1063 < 0.5) {
+          console.log(e)
+          e.target.parentElement.querySelector('.pingfen-icon').style.left = '386px'
+        } else if (e.offsetX / 1063 < 0.7) {
+          console.log(e)
+          e.target.parentElement.querySelector('.pingfen-icon').style.left = '584px'
+        } else if (e.offsetX / 1063 < 0.9) {
+          console.log(e)
+          e.target.parentElement.querySelector('.pingfen-icon').style.left = '784px'
+        } else if (e.offsetX / 1063 < 1) {
+          console.log(e)
+          e.target.parentElement.querySelector('.pingfen-icon').style.left = '978px'
+        }
+      }
+    });
+    function selectGroup (group, name) {
+      document.querySelectorAll('.select-item[group="group1"]').forEach(element => {
+        element.classList.remove('active')
+      });
+      document.querySelector(`.select-item[name="${name}"]`).classList.add('active')
+      document.querySelectorAll('.check-box[group="group1"]').forEach(element => {
+        element.style.display = 'none'
+      });
+      document.querySelector(`.check-box[name="${name}"]`).style.display = 'block'
+    }
   </script>
 </body>
 
