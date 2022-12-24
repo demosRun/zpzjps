@@ -109,7 +109,7 @@
       background-color: white;
       margin-right: 10px;
     }
-    .img-box .img-item span {
+    .img-box .img-item span.checkitem {
       background-color: #aaaaaa;
       display: block;
       width: 90px;
@@ -119,7 +119,7 @@
       margin: 0 auto;
       margin-top: 10px;
     }
-    .img-box .img-item.active span {
+    .img-box .img-item.active span.checkitem {
       background-color: #eb5b29;
       color: white;
     }
@@ -205,6 +205,13 @@
     }
     .check-box {
       cursor: pointer;
+    }
+    .img-box .check-box {
+      display: block;
+      margin-left: 0;
+    }
+    .img-box .check-box .checkbox-item {
+      width: 96px;
     }
   </style>
 </head>
@@ -311,11 +318,63 @@
         <h2 class="icon-1">研发部 杜波</h2>
         <h3>人民网LOGO冻干咖啡</h3>
         <div class="img-box clear">
-          <div class="img-item">
+          <div class="img-item select-item active" group="group1" name="name1">
             <img src="./static/images/200.png">
+            <div class="check-box" style="display: block;">
+              <span class="checkbox-item">
+                <input type="checkbox"> 选项
+              </span>
+              <span class="checkbox-item">
+                <input type="checkbox"> 选项
+              </span>
+              <span class="checkbox-item">
+                <input type="checkbox"> 选项
+              </span>
+              <span class="checkbox-item">
+                <input type="checkbox"> 选项
+              </span>
+              <span class="checkbox-item">
+                <input type="checkbox"> 选项
+              </span>
+              <span class="checkbox-item">
+                <input type="checkbox"> 选项
+              </span>
+              <span class="checkbox-item">
+                <input type="checkbox"> 选项
+              </span>
+              <span class="checkbox-item">
+                <input type="checkbox"> 选项
+              </span>
+            </div>
           </div>
-          <div class="img-item">
+          <div class="img-item select-item" group="group1" name="name2">
             <img src="./static/images/200.png">
+            <div class="check-box" style="display: block;">
+              <span class="checkbox-item">
+                <input type="checkbox"> 选项
+              </span>
+              <span class="checkbox-item">
+                <input type="checkbox"> 选项
+              </span>
+              <span class="checkbox-item">
+                <input type="checkbox"> 选项
+              </span>
+              <span class="checkbox-item">
+                <input type="checkbox"> 选项
+              </span>
+              <span class="checkbox-item">
+                <input type="checkbox"> 选项
+              </span>
+              <span class="checkbox-item">
+                <input type="checkbox"> 选项
+              </span>
+              <span class="checkbox-item">
+                <input type="checkbox"> 选项
+              </span>
+              <span class="checkbox-item">
+                <input type="checkbox"> 选项
+              </span>
+            </div>
           </div>
         </div>
         <p>内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号内容微软雅黑16号</p>
@@ -340,11 +399,11 @@
         <div class="img-box clear">
           <div class="img-item select-item active" group="group1" name="name1">
             <img src="./static/images/200.png">
-            <span onclick="selectGroup('group1', 'name1')">选择</span>
+            <span class="checkitem" onclick="selectGroup('group1', 'name1')">选择</span>
           </div>
           <div class="img-item select-item" group="group1" name="name2">
             <img src="./static/images/200.png">
-            <span onclick="selectGroup('group1', 'name2')">选择</span>
+            <span class="checkitem" onclick="selectGroup('group1', 'name2')">选择</span>
           </div>
         </div>
         <div class="check-box" group="group1" name="name1" style="display: block;">
